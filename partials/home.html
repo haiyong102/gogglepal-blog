@@ -1,0 +1,122 @@
+<!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home-bg.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Welcome to GogglePal</h1>
+                        <hr class="small">
+                        <span class="subheading">We Tell Your Mountain Story</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+    <div class="container">
+        <div class="row">
+            <h1>Track, Compete, and Share.</h1>
+            <p>Imagine you are skiing or snowboarding at your favorite resort. Maybe it’s Vail. Or Whistler. Or Tahoe. Or the local hill in your back yard. Whether it’s your 100th time on the mountain or your first, GogglePal will make sharing your experience with friends and family easier and way more fun.</p>
+            <p>From playing an all-mountain treasure hunt to challenging your friends to ski or ride the most vertical feet, GogglePal’s stripped down version of augmented reality helps you tell your own story in the data that matters most. Track your top speed, the vertical you’ve accumulated, and even the energy you’ve spent.</p>
+            <p>All of this data can be summarized, scrutinized, and compared.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <h1>Your Reality. Your Vision.</h1>
+            <p>In three simple steps, our Heads Up Display works like this:</p>
+            <ol>
+                <li><b>MOUNT</b> the small GogglePal adapter to the goggles you already own</li>
+                <li><b>LEARN</b> about your speed and vertical with a simple heads-up display in your lenses</li>
+                <li><b>PLAY</b> with your friends by comparing data like top speed and playing games all across the mountain using the GogglePal heads-up display and mobile app.</li>
+            </ol>
+            <p>Imagine getting off the chairlift and looking down on the slopes in front of you. There is a whole mountain of data before your eyes and with the GogglePal, you can begin collecting it. The mountain is yours.</p>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Here’s How GogglePal Works.</h1>
+        <p></p>
+        <div class="row">
+            <div ng-repeat="feature in featuresRow1" class="col-sm-12 col-md-3">
+                <div class="thumbnail">
+                  <img src="{{feature.src}}" alt="...">
+                  <div class="caption">
+                    <h3>{{feature.header}}</h3>
+                    <p>{{feature.body}}</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div ng-repeat="feature in featuresRow2" class="col-sm-12 col-md-3">
+                <div class="thumbnail">
+                  <img src="{{feature.src}}" alt="...">
+                  <div class="caption">
+                    <h3>{{feature.header}}</h3>
+                    <p>{{feature.body}}</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="thumbnail">
+                  <img src="img/productView.png" alt="...">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h2>Our Product View Will Blow Your Mind.</h2>
+                <p>GogglePal’s Universal Mount technology is compatible with your current goggles. In a snap, pair the device with your favorite goggles. It’s that easy.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="thumbnail">
+                  <img src="img/appView.png" alt="...">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h2>Track, Compete, and Share See for yourself.</h2>
+                <p>Track your stats, know where you were and where you are going. Play games with your friends, from all-mountain treasure hunts to comparing stats like maximum speed and total vertical drop. Every day is a story – share yours with GogglePal!</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div ng-repeat="post in posts" class="post-preview">
+                    <a href="#/blog/{{post.id}}">
+                        <h2 class="post-title">
+                            {{post.title}}
+                        </h2>
+                        <h3 class="post-subtitle">
+                            {{post.subtitle}}
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#/">{{post.author}}</a> on {{post.date}}</p>
+                </div>
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#/blog">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
